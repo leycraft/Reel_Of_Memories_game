@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Clown_Featherback_0: -138364496712981333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

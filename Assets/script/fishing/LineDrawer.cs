@@ -25,4 +25,16 @@ public class LineDrawer : MonoBehaviour
             lineRenderer.SetPosition(1, endPoint.transform.position);
         }
     }
+
+    public float get_distance()
+    {
+        float dist = Vector3.Distance(startPoint.transform.position, endPoint.transform.position);
+        return dist;
+    }
+
+    public Vector3 get_direction()
+    {
+        Vector3 direction = startPoint.transform.position - endPoint.transform.position;
+        return direction;
+    }
 }

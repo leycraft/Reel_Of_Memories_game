@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Documents\\fishing game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|c:\\users\\pc\\documents\\fishing game\\assets\\script\\fishing\\surface_stop_fishing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fishing\\surface_stop_fishing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|C:\\Users\\PC\\Documents\\fishing game\\assets\\script\\fishing\\fish_basic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fishing\\fish_basic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|C:\\Users\\PC\\Documents\\fishing game\\assets\\script\\base_game\\player_stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\base_game\\player_stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|c:\\users\\pc\\documents\\fishing game\\assets\\script\\fishing\\hook_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fishing\\hook_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|C:\\Users\\PC\\Documents\\fishing game\\assets\\script\\fishing\\man_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fishing\\man_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|C:\\Users\\PC\\Documents\\fishing game\\assets\\script\\fishing\\linedrawer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fishing\\linedrawer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|C:\\Users\\PC\\Documents\\fishing game\\assets\\script\\ui\\keyboardclickbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|c:\\users\\pc\\documents\\fishing game\\assets\\script\\ui\\keyboardclickbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui\\keyboardclickbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|C:\\Users\\PC\\Documents\\fishing game\\assets\\script\\general\\start_disabled.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\general\\start_disabled.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|C:\\Users\\PC\\Documents\\fishing game\\assets\\script\\ui\\ui_switch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui\\ui_switch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|C:\\Users\\PC\\Documents\\fishing game\\assets\\script\\camera\\cam_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\camera\\cam_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|C:\\Users\\PC\\Documents\\fishing game\\assets\\script\\fishing\\man_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{332EA2FA-C8D9-FE2E-6FAB-7B3E69BC6606}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fishing\\man_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,49 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "surface_stop_fishing.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\fishing\\surface_stop_fishing.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\fishing\\surface_stop_fishing.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\fishing\\surface_stop_fishing.cs",
-              "RelativeToolTip": "Assets\\script\\fishing\\surface_stop_fishing.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T11:52:52.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "hook_movement.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\fishing\\hook_movement.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\fishing\\hook_movement.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\fishing\\hook_movement.cs",
-              "RelativeToolTip": "Assets\\script\\fishing\\hook_movement.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowC4AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T14:56:22.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LineDrawer.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\fishing\\LineDrawer.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\fishing\\LineDrawer.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\fishing\\LineDrawer.cs",
-              "RelativeToolTip": "Assets\\script\\fishing\\LineDrawer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T07:21:33.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "KeyboardClickButton.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\ui\\KeyboardClickButton.cs",
               "RelativeDocumentMoniker": "Assets\\script\\ui\\KeyboardClickButton.cs",
@@ -92,55 +42,60 @@
               "RelativeToolTip": "Assets\\script\\ui\\KeyboardClickButton.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T07:04:08.436Z"
+              "WhenOpened": "2025-10-16T14:33:14.336Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "hook_movement.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\fishing\\hook_movement.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\fishing\\hook_movement.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\fishing\\hook_movement.cs",
+              "RelativeToolTip": "Assets\\script\\fishing\\hook_movement.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAADwv1YAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T14:56:22.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "player_stats.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\base_game\\player_stats.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\base_game\\player_stats.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\base_game\\player_stats.cs",
+              "RelativeToolTip": "Assets\\script\\base_game\\player_stats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T13:50:08.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "fish_basic.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\fishing\\fish_basic.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\fishing\\fish_basic.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\fishing\\fish_basic.cs",
+              "RelativeToolTip": "Assets\\script\\fishing\\fish_basic.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAswHcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T13:46:18.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "man_control.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\fishing\\man_control.cs",
               "RelativeDocumentMoniker": "Assets\\script\\fishing\\man_control.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\fishing\\man_control.cs",
               "RelativeToolTip": "Assets\\script\\fishing\\man_control.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T14:47:29.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "start_disabled.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\general\\start_disabled.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\general\\start_disabled.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\general\\start_disabled.cs",
-              "RelativeToolTip": "Assets\\script\\general\\start_disabled.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T07:02:29.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ui_switch.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\ui\\ui_switch.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\ui\\ui_switch.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\ui\\ui_switch.cs",
-              "RelativeToolTip": "Assets\\script\\ui\\ui_switch.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T05:56:42.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "cam_control.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\camera\\cam_control.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\camera\\cam_control.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\fishing game\\Assets\\script\\camera\\cam_control.cs",
-              "RelativeToolTip": "Assets\\script\\camera\\cam_control.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T14:25:19.212Z"
+              "WhenOpened": "2025-09-24T14:47:29.52Z",
+              "EditorCaption": ""
             }
           ]
         }

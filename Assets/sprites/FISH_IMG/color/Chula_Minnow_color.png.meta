@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Chula_Minnow_color_0: 6355554435122653677
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
