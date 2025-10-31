@@ -73,9 +73,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1648468691
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 2478435304809149319, guid: 71ee40b9ec2cd344096077452a2b4305, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -201,10 +201,10 @@ MonoBehaviour:
   speed: 1
   movement_cooldown: 0
   movement_cooldown_time: 5
-  chase_speed: 15
+  chase_speed: 3
   pull_strength: 1
   preferred_lure: 0
-  eyesight_length: 2
-  eat_chance: 40
+  eyesight_length: 4
+  eat_chance: 100
   eat_cooldown_time: 2
   eat_cooldown: 0

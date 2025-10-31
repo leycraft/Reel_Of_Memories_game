@@ -40,8 +40,12 @@ public class fish_basic : MonoBehaviour
         mouth_location = transform.Find("mouth_location").gameObject;
         hook = GameObject.Find("hook_obj").GetComponent<hook_movement>();
 
-        topleft_limit = GameObject.Find("bound_topleft");
-        bottomright_limit = GameObject.Find("bound_bottomright");
+        // topleft_limit = GameObject.Find("bound_topleft");
+        // bottomright_limit = GameObject.Find("bound_bottomright");
+
+
+
+        StartCoroutine(eating_cooldown());
     }
 
     // Update is called once per frame
@@ -98,7 +102,6 @@ public class fish_basic : MonoBehaviour
                     if (eat_cooldown == 0)
                     {
                         eat_cooldown = eat_cooldown_time;
-                        StartCoroutine(eating_cooldown());
                     }
 
                 }
@@ -110,10 +113,10 @@ public class fish_basic : MonoBehaviour
             // moving to lure
 
             float step = chase_speed * Time.deltaTime; // calculate distance to move
-            transform.position = Vector3.MoveTowards(transform.position, hook.get_hookLocation().position - mouth_location.transform.localPosition, step);
+            transform.position = Vector3.MoveTowards(transform.position, hook.get_hookLocation().position - Vector3.Scale(mouth_location.transform.localPosition, mouth_location.transform.lossyScale), step);
             change_fish_direction(hook.get_hookLocation().position);
 
-            if (hook.fish_caught != null)
+            if (hook.fish_caught != null || dist > 15)
             {
                 fish_state = 0;
             }
@@ -142,14 +145,14 @@ public class fish_basic : MonoBehaviour
 
     public void change_fish_direction(Vector3 destination)
     {
-        Vector3 new_scale = new Vector3(1f, 1f, 1f);
-        if (transform.position.x >= destination.x)
+        Vector3 new_scale = gameObject.transform.localScale;
+        if (transform.position.x > destination.x)
         {
-            new_scale.x = 1f;
+            new_scale.x = Mathf.Abs(new_scale.x);
         }
-        else
+        else if (transform.position.x < destination.x)
         {
-            new_scale.x = -1f;
+            new_scale.x = -Mathf.Abs(new_scale.x);
         }
 
         transform.localScale = new_scale;
@@ -170,11 +173,12 @@ public class fish_basic : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
 
-        eat_cooldown--;
         if (eat_cooldown > 0)
         {
-            StartCoroutine(eating_cooldown());
+            eat_cooldown--;
         }
+        
+        StartCoroutine(eating_cooldown());
     }
 
     public void eat_bait()
@@ -183,7 +187,11 @@ public class fish_basic : MonoBehaviour
         {
             hook.fish_on_hook(this);
             fish_state = 3;
-            transform.localScale = new Vector3(1f, 1f, 1f);
+
+            Vector3 new_scale = gameObject.transform.localScale;
+            new_scale.x = -Mathf.Abs(new_scale.x);
+
+            transform.localScale = new_scale;
         }
 
 
@@ -191,15 +199,22 @@ public class fish_basic : MonoBehaviour
 
     IEnumerator chasing_bored()
     {
-        yield return new WaitForSeconds(2);
-        if (hook.fish_caught == null)
+        yield return new WaitForSeconds(5);
+        if (hook.fish_caught == null && fish_state == 1)
         {
-            fish_state = 1;
+            eat_cooldown = eat_cooldown_time;
+            fish_state = 0;
         }
     }
 
     public void set_fishState(int num)
     {
         fish_state = num;
+    }
+
+    public void set_boundary(GameObject topleft, GameObject bottomright)
+    {
+        topleft_limit = topleft;
+        bottomright_limit = bottomright;
     }
 }

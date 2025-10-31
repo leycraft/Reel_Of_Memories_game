@@ -44,7 +44,7 @@ public class man_control : MonoBehaviour
 
         audio_manager.sound_Play("rod_cast");
         hook.start_fishing();
-        camera_main.set_camera(GameObject.Find("hook_obj"));
+        camera_main.set_camera(1);
         camera_main.set_speed(10f);
         game_ui.change_UI(1);
     }
@@ -54,7 +54,7 @@ public class man_control : MonoBehaviour
         m_Animator.SetTrigger("finishCasting");
         is_idle = true;
         hook.stop_fishing();
-        camera_main.set_camera(GameObject.Find("man_obj"));
+        camera_main.set_camera(0);
         camera_main.set_speed(17f);
         game_ui.change_UI(0);
     }

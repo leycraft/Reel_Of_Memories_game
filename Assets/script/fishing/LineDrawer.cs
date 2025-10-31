@@ -31,10 +31,19 @@ public class LineDrawer : MonoBehaviour
     {
         if (startPoint != null && endPoint != null)
         {
-            lineRenderer.positionCount = 2;
-            lineRenderer.SetPosition(0, startPoint.transform.position);
-            lineRenderer.SetPosition(1, endPoint.transform.position);
+            if (startPoint.transform.position.y > endPoint.transform.position.y)
+            {
+                lineRenderer.positionCount = 2;
+                lineRenderer.SetPosition(0, startPoint.transform.position);
+                lineRenderer.SetPosition(1, endPoint.transform.position);
+            }
+            else
+            {
+                lineRenderer.positionCount = 0;
+            }
+                
         }
+
 
         ball_location();
         ball_beeping();
@@ -43,6 +52,12 @@ public class LineDrawer : MonoBehaviour
     public float get_distance()
     {
         float dist = Vector3.Distance(startPoint.transform.position, endPoint.transform.position);
+        return dist;
+    }
+
+    public float get_depth()
+    {
+        float dist = Mathf.Abs(startPoint.transform.position.y - endPoint.transform.position.y);
         return dist;
     }
 
@@ -66,7 +81,6 @@ public class LineDrawer : MonoBehaviour
         {
             float hook_strength = (hook.stress_level / hook.get_reelStrength()) * 100;
             alpha_level = ((1.25f * hook_strength) - 12.5f) / 100;
-            print(alpha_level);
         }
 
         stress_ball_red.GetComponent<SpriteRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, alpha_level);

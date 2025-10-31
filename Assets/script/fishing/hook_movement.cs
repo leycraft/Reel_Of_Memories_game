@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -31,6 +32,11 @@ public class hook_movement : MonoBehaviour
 
     public float pull_back_power = 50f;
 
+    public float fish_extra_strength = 1;
+    float extra_strength_increment = 0.2f;
+
+    float fish_extra_direction = 0;
+
     public fish_basic fish_caught;
     public GameObject item_caught;
 
@@ -40,6 +46,8 @@ public class hook_movement : MonoBehaviour
     Transform hook_location;
     LineDrawer fishing_line;
     AudioManager audio_manager;
+
+    GameObject lure_sprite;
 
     Vector3 original_location;
 
@@ -53,18 +61,26 @@ public class hook_movement : MonoBehaviour
         fishing_line = GetComponent<LineDrawer>();
         audio_manager = GameObject.Find("REEL_player").GetComponent<AudioManager>();
 
-        hook_location = transform.Find("hook");
+        hook_location = transform.Find("line_point_end");
+
+        lure_sprite = transform.Find("lure_all").gameObject;
 
         original_location = transform.position;
 
         transform.position = new Vector3(999, 999, 999);
-        fishing_line.enabled = false;
+        //fishing_line.enabled = false;
+
+        StartCoroutine(hook_wiggle());
+        StartCoroutine(fish_direction());
+
     }
 
     // Update is called once per frame
     void Update()
     {
         hook_moving();
+
+        lure_visibility();
 
         calculate_stats();
 
@@ -119,8 +135,7 @@ public class hook_movement : MonoBehaviour
         audio_manager.sound_Play("fast_reel");
         audio_manager.sound_volume("fast_reel", 0);
 
-        fishing_line.enabled = true;
-        gameObject.SetActive(true);
+        //fishing_line.enabled = true;
         transform.position = original_location;
 
         m_Rigidbody.AddForce(Vector3.down * 1.5f, ForceMode2D.Impulse);
@@ -147,8 +162,6 @@ public class hook_movement : MonoBehaviour
         }
 
         transform.position = new Vector3(999, 999, 999);
-        fishing_line.enabled = false;
-        gameObject.SetActive(false);
 
         stress_level = 0;
     }
@@ -163,17 +176,29 @@ public class hook_movement : MonoBehaviour
     public void fish_positioning()
     {
         Vector3 mouth = fish_caught.get_mouthLocation();
-        fish_caught.transform.position = hook_location.position - mouth;
+        fish_caught.transform.position = hook_location.position - Vector3.Scale(mouth, fish_caught.transform.lossyScale);
     }
 
     public void fishing_gameplay()
     {
-        Vector3 movement = new Vector3(1f, -1f, 0f);
+        Vector3 movement = new Vector3(1f, fish_extra_direction, 0f);
         Vector3 pull_back = fishing_line.get_direction().normalized;
+
+        fish_extra_strength += extra_strength_increment * Time.deltaTime;
+
+        if(fish_extra_strength > 1.5)
+        {
+            extra_strength_increment = -Mathf.Abs(extra_strength_increment);
+        }
+        else if (fish_extra_strength < 1)
+        {
+            extra_strength_increment = Mathf.Abs(extra_strength_increment);
+        }
+
 
         if (Input.GetKey(KeyCode.Space))
         {
-            transform.Translate(pull_back * (pull_back_power + fish_caught.pull_strength) * Time.deltaTime);
+            transform.Translate(pull_back * (pull_back_power - (pull_back_power * (fish_extra_strength - 1))) * Time.deltaTime);
             stress_level += stress_increment * Time.deltaTime;
 
             audio_manager.sound_volume("fast_reel", 0.05f);
@@ -182,7 +207,7 @@ public class hook_movement : MonoBehaviour
         {
             audio_manager.sound_volume("fast_reel", 0);
 
-            transform.Translate(movement * fish_caught.pull_strength * Time.deltaTime);
+            transform.Translate(movement * fish_caught.pull_strength * fish_extra_strength * Time.deltaTime);
 
             if (stress_level > 0)
             {
@@ -215,6 +240,37 @@ public class hook_movement : MonoBehaviour
     {
         fish_caught = fish;
         transform.localScale = new Vector3(1f, 1f, 1f);
+    }
+
+    public void lure_visibility()
+    {
+        if (fish_caught == null)
+        {
+            lure_sprite.SetActive(true);
+        }
+        else
+        {
+            lure_sprite.SetActive(false);
+        }
+    }
+
+    IEnumerator hook_wiggle()
+    {
+        m_Rigidbody.linearVelocity = Vector3.zero;
+        if (!man.is_idle)
+        {
+            m_Rigidbody.AddForce(new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f), 0), ForceMode2D.Impulse);
+        }
+        yield return new WaitForSeconds(0.5f);
+
+        StartCoroutine(hook_wiggle());
+    }
+
+    IEnumerator fish_direction()
+    {
+        fish_extra_direction = Random.Range(-1f, -0.1f);
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(fish_direction());
     }
 
     private void OnTriggerEnter2D(Collider2D other)
