@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      climbing perch_color_0: 3408475558325001763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

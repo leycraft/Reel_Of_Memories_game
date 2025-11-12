@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shop item lure exemple_0: -5494498822615404748
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

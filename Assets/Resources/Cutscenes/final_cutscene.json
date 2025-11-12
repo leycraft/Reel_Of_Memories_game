@@ -1,0 +1,221 @@
+{
+    "cutsceneId": "FifthCutscene",
+    "lines": [
+        {
+        "speakerName": "",
+        "dialogueText": "You return to the shop to sell the Six-Eyed Fish to Shopkeeper, just as you promised.",
+        "background": "black",
+        "character": null,
+        "bgm": "doorbell",
+        "isNarration": true
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Ah, you’ve returned, my good customer. How did it go, if I may ask?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "I caught it — here, take a look.",
+        "background": "shop",
+        "character": "six_eye_fish_color_v2",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "(peers at the fish) Ugly as a horse’s bottom.",
+        "background": "shop",
+        "character": "six_eye_fish_color_v2",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "As promised, I’ll be the one to buy this peculiar catch from you.\nBut before you leave, I happen to have a very special offer just for you, my good customer.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "An offer, huh? What kind of offer are we talking about?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "This… is what I found inside that iron box you brought me earlier…",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "The shopkeeper slowly pulled out an old ID card. The name had been crudely scratched out, while the face on it appeared faint and distorted, as if blurred by time itself.",
+        "background": "card",
+        "character": null,
+        "bgm": "losing_mind",
+        "isNarration": false
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "As you laid eyes on the card, that lingering emptiness deep within your heart began to stir once more — a faint ember of forgotten emotion flickering back to life.",
+        "background": "card",
+        "character": null,
+        "bgm": "losing_mind",
+        "isNarration": false
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "Fragments of memory begin to surface — images of people in lab coats walking toward the dam… and among them… was <b>you</b>",
+        "background": "scientists_group",
+        "character": null,
+        "bgm": "losing_mind",
+        "isNarration": false
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "As you try to recall what happened next, a sharp pain pierces your head — as if something deep inside is holding you back.",
+        "background": "scientists_group",
+        "character": null,
+        "bgm": "losing_mind",
+        "isNarration": false
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "That feeling… Could it be <b>guilt</b>?",
+        "background": "scientists_group",
+        "character": null,
+        "bgm": "losing_mind",
+        "isNarration": false
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "Before that overwhelming feeling could consume you entirely, the voice of the shopkeeper called out — pulling you back to reality.",
+        "background": "shop",
+        "character": null,
+        "bgm": "losing_mind",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "My good customer, are you all right?\nYou don’t look so well... your face seems rather pale.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "Sorry about that — guess I overdid it with all the fishing. I’m fine now.\nSo… what was that special offer you were talking about?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "You see, with this card me—ah, I mean <i>we</i> both—can gain access inside the dam.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "And if you still have an interest in hunting other strange fish, well… There are plenty more of their kind lurking just beyond it.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "And how exactly do you know there’ll be more strange fish like that in there?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Let’s just say… that information came from an old friend of mine.\nAnd of course, if you happen to catch any more of those strange fish, I’ll gladly buy them from you.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Fair and square for both sides, wouldn’t you agree?\nSo… are you interested in going in, my good customer?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "(<i>Even though this guy seems shady… but from the memories I just saw, it feels like I have to go into that dam…</i>)",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "Alright, deal. I’ll go into the dam with you — I don’t have much else to do these days anyway.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "<b><i>Excellent</i></b> decision, my good customer!\nIn that case, meet me at the dam entrance tomorrow.\nI’ll need to prepare a few things before we head inside.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Until then — I’ll be waiting for you, my good customer.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "After the conversation ended, you returned home, your mind swirling with everything that had happened.",
+        "background": "black",
+        "character": null,
+        "bgm": "end_scene",
+        "isNarration": true
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "You weren’t sure if entering the dam was truly a good idea… yet your curiosity had already surpassed your sense of reason.",
+        "background": "black",
+        "character": null,
+        "bgm": "end_scene",
+        "isNarration": true
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "Because deep down, you wanted nothing more than to <b><i>reel</i></b> in those lost <b><i>memories</i></b>.",
+        "background": "black",
+        "character": null,
+        "bgm": "end_scene",
+        "isNarration": true
+        }
+    ]
+}

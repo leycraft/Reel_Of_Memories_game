@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Shop UI Cutscreen Exemple_0: -4479866759240312643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

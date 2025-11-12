@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BrokenTV_0: -6665492550489510205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

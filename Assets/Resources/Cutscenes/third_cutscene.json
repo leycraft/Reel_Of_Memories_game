@@ -1,0 +1,117 @@
+{
+    "cutsceneId": "ThirdCutscene",
+    "lines": [
+        {
+        "speakerName": "",
+        "dialogueText": "You return to the shop to ask about a way to catch the Six-Eyed Fish.",
+        "background": "black",
+        "character": null,
+        "bgm": "doorbell",
+        "isNarration": true
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Welcome back, dear customer…\nJudging by that look on your face, I’d say you’ve met the Six-Eyed Fish, haven’t you?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "Yes… I ran right into it, but it didn’t seem interested in the bait I had.\nDo you know any other way to catch it?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Of course, my dear customer!\nAs it happens, I possess a special kind of bait passed down through my family.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "No matter what kind of fish sees it — they’ll be drawn to it without fail!",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "Perfect! So, how much are you selling it for?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "But hold on, my <i>good</i> customer.\n This time, instead of selling it, how about I ask you for a little favor in exchange for this bait?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "…And what kind of job would that be?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "I happened to receive a request from a man in the village. He said he accidentally dropped an important iron box belonging to his wife into the river.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "I’d like to ask you to help find it for him — it should be somewhere near the <b>pile of debris</b> beneath the river.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Of course, my shop sells <b>magnets</b> specially made for retrieving items underwater.\nSo, what do you say, my good customer? Interested in taking the job?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "(<i>Damn it… not only does he give me a job, but I have to buy the magnet too? Well, whatever it takes—I need that special bait of his.</i>)",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "Fine, I’ll do it. I just hope that bait of yours is worth all this trouble.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Of course, my good customer. I never offer a deal that isn’t worth your while…",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        }
+    ]
+}

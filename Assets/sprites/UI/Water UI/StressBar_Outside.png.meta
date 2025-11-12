@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      StressBar_Outside_0: 8562942480688700273
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
