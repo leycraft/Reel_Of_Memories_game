@@ -1,0 +1,13 @@
+{
+"name": "Giant Dusky Hairfin Anchovy",
+"comment": "I never thought a fish could move that fast.",
+"location": "Found in shallow to mid-depth sections of the river.",
+"desc": "The Giant Dusky Hairfin Anchovy is the largest known member of its genus. Despite its considerable size, it is capable of remarkable speed, accelerating even further when pursuing prey. However, its vision is notably poor—among the shortest range within its lineage. Historically, such a species did not exist; it is believed that extensive mutation within the river’s ecosystem led to the transformation of most anchovy populations into this gigantic variant.",
+"price": 160,
+"speed": 3,
+"moveFreq": 5,
+"chaseSpd": 7,
+"pullStr": 3,
+"bait": 0,
+"eyesight": 3
+}

@@ -1,0 +1,13 @@
+{
+"name": "Six Eye Fish",
+"comment": "Its eyes... They followed me. All six of them.",
+"location": "Deep sections of the river.",
+"desc": "As its name suggests, this specimen possesses six eyes—though four of them bear an unsettling resemblance to human eyes. Beneath its abdomen are limb-like appendages that mimic the form of human arms and legs. I have never encountered such a creature before, yet there is an inexplicable sense of familiarity, as if I’ve seen it somewhere long ago. I can’t explain this feeling… or what could have happened to this river to give birth to something like this.",
+"price": 1200,
+"speed": 1,
+"moveFreq": 5,
+"chaseSpd": 10,
+"pullStr": 5,
+"bait": 3,
+"eyesight": 6
+}

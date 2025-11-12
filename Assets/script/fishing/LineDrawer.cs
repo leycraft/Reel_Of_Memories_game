@@ -55,6 +55,12 @@ public class LineDrawer : MonoBehaviour
         return dist;
     }
 
+    public float get_distance_meter()
+    {
+        float dist = Vector3.Distance(startPoint.transform.position, endPoint.transform.position);
+        return dist * 0.5f;
+    }
+
     public float get_depth()
     {
         float dist = Mathf.Abs(startPoint.transform.position.y - endPoint.transform.position.y);

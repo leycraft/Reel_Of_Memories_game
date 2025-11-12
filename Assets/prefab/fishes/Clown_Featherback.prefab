@@ -55,8 +55,6 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -78,7 +76,6 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -337,6 +334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7033289535298512212}
+  - component: {fileID: 3788159646320327489}
   m_Layer: 0
   m_Name: Clown_Featherback
   m_TagString: Untagged
@@ -361,3 +359,29 @@ Transform:
   - {fileID: 3999833409399277201}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3788159646320327489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6874830360188484657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a4dfe98d1c7144ca52dad3fc9a2275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fish_id: 1
+  json_name: fish1
+  weight: 2
+  price: 60
+  speed: 1
+  movement_cooldown: 0
+  movement_cooldown_time: 5
+  chase_speed: 3
+  pull_strength: 1
+  preferred_lure: 0
+  eyesight_length: 4
+  eat_chance: 100
+  eat_cooldown_time: 2
+  eat_cooldown: 0

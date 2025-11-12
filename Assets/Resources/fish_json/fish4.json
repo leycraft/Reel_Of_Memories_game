@@ -1,0 +1,13 @@
+{
+"name": "River Salmon",
+"comment": "River salmon? This is the first time I’ve ever seen one.",
+"location": "Mid-level areas of the river.",
+"desc": "The River Salmon closely resembles its ocean-dwelling relatives, differing only in its slightly smaller size. It is believed to have originated from mutations within the river ecosystem. Unlike typical salmon that migrate to the sea after spawning, this variant has abandoned that instinct entirely, choosing instead to live its entire life within the river. Over time, this behavior has stabilized into a distinct freshwater lineage—one that seems content to never return to the ocean again.",
+"price": 300,
+"speed": 2,
+"moveFreq": 5,
+"chaseSpd": 7,
+"pullStr": 4,
+"bait": 2,
+"eyesight": 6
+}

@@ -12,6 +12,11 @@ public class fish_basic : MonoBehaviour
     GameObject topleft_limit;
     GameObject bottomright_limit;
 
+    Animator f_Animator;
+
+    public int fish_id = 1;
+    public string json_name;
+
     public float weight = 1f;
     public int price = 100;
 
@@ -29,6 +34,7 @@ public class fish_basic : MonoBehaviour
     public int eat_cooldown = 0;
 
     int fish_state = 0;
+    bool chasing_flag = false;
 
     float dist;
 
@@ -40,12 +46,25 @@ public class fish_basic : MonoBehaviour
         mouth_location = transform.Find("mouth_location").gameObject;
         hook = GameObject.Find("hook_obj").GetComponent<hook_movement>();
 
-        // topleft_limit = GameObject.Find("bound_topleft");
-        // bottomright_limit = GameObject.Find("bound_bottomright");
+        f_Animator = transform.Find("sprites/Square").gameObject.GetComponent<Animator>();
 
+        TextAsset loaded_json = Resources.Load<TextAsset>("fish_JSON/" + json_name);
 
+        if (loaded_json != null)
+        {
+            fish_json fish_file = JsonUtility.FromJson<fish_json>(loaded_json.text);
+
+            price = fish_file.price;
+            speed = fish_file.speed;
+            movement_cooldown_time = fish_file.moveFreq;
+            chase_speed = fish_file.chaseSpd;
+            pull_strength = fish_file.pullStr;
+            preferred_lure = fish_file.bait;
+            eyesight_length = fish_file.eyesight;
+        }
 
         StartCoroutine(eating_cooldown());
+        StartCoroutine(move_normal());
     }
 
     // Update is called once per frame
@@ -76,7 +95,6 @@ public class fish_basic : MonoBehaviour
                 destination = new Vector3(random_x, random_y, transform.position.z);
 
                 movement_cooldown = movement_cooldown_time;
-                StartCoroutine(move_normal());
             }
 
             // move to destination
@@ -90,20 +108,38 @@ public class fish_basic : MonoBehaviour
 
             if (dist < eyesight_length && hook.fish_caught == null)
             {
-                // think about eating 
+                // check condition to eat
+                bool can_eat = true;
 
-                int random_num = Random.Range(0, 100);
-                if (random_num <= eat_chance && eat_cooldown == 0)
+                // magnet must not be on
+                if (hook.magnet_on)
                 {
-                    fish_state = 1;
+                    can_eat = false;
                 }
-                else
-                {
-                    if (eat_cooldown == 0)
-                    {
-                        eat_cooldown = eat_cooldown_time;
-                    }
 
+                
+                if (can_eat)
+                {
+
+
+                    // think about eating 
+
+                    int random_num = Random.Range(0, 100);
+                    if (random_num <= eat_chance && eat_cooldown == 0)
+                    {
+                        // go eat
+
+                        fish_state = 1;
+                        f_Animator.SetTrigger("go_fast");
+                    }
+                    else
+                    {
+                        if (eat_cooldown == 0)
+                        {
+                            eat_cooldown = eat_cooldown_time;
+                        }
+
+                    }
                 }
 
             }
@@ -118,10 +154,19 @@ public class fish_basic : MonoBehaviour
 
             if (hook.fish_caught != null || dist > 15)
             {
+                // can't eat because hook is too far or occupied
+
                 fish_state = 0;
+                f_Animator.SetTrigger("go_slow");
+                chasing_flag = false;
             }
 
-            StartCoroutine(chasing_bored());
+            if (!chasing_flag)
+            {
+                StartCoroutine(chasing_bored());
+                chasing_flag = true;
+            }
+
 
             eat_bait();
         }
@@ -138,13 +183,16 @@ public class fish_basic : MonoBehaviour
             Destroy(gameObject, 3f);
 
         }
-        else if (fish_state == 3) { 
+        else if (fish_state == 3)
+        {
             // do nothing state
         }
     }
 
     public void change_fish_direction(Vector3 destination)
     {
+        // change side
+
         Vector3 new_scale = gameObject.transform.localScale;
         if (transform.position.x > destination.x)
         {
@@ -156,17 +204,43 @@ public class fish_basic : MonoBehaviour
         }
 
         transform.localScale = new_scale;
+
+        // change rotation
+
+        Vector3 relativePos = destination - transform.position;
+        relativePos.Normalize();
+        float look_at = Vector3.Angle(new Vector3(1, 0, 0), relativePos);
+
+        if (look_at > 90)
+        {
+            look_at = 180 - look_at;
+        }
+
+        if (relativePos.y < 0)
+        {
+            look_at = -look_at;
+        }
+
+        if (transform.localScale.x > 0)
+        {
+            look_at = -look_at;
+        }
+
+        Quaternion new_rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, look_at);
+
+        transform.rotation = new_rotation;
     }
 
     IEnumerator move_normal()
     {
         yield return new WaitForSeconds(1);
 
-        movement_cooldown--;
         if (movement_cooldown > 0)
         {
-            StartCoroutine(move_normal());
+            movement_cooldown--;
         }
+
+        StartCoroutine(move_normal());
     }
 
     IEnumerator eating_cooldown()
@@ -177,7 +251,7 @@ public class fish_basic : MonoBehaviour
         {
             eat_cooldown--;
         }
-        
+
         StartCoroutine(eating_cooldown());
     }
 
@@ -192,6 +266,8 @@ public class fish_basic : MonoBehaviour
             new_scale.x = -Mathf.Abs(new_scale.x);
 
             transform.localScale = new_scale;
+
+            transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 0);
         }
 
 
@@ -202,8 +278,12 @@ public class fish_basic : MonoBehaviour
         yield return new WaitForSeconds(5);
         if (hook.fish_caught == null && fish_state == 1)
         {
+            // can't eat because chase too long
+
             eat_cooldown = eat_cooldown_time;
             fish_state = 0;
+            f_Animator.SetTrigger("go_slow");
+            chasing_flag = false;
         }
     }
 

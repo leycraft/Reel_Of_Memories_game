@@ -1,0 +1,13 @@
+{
+"name": "Clown Featherback",
+"comment": "Makes me crave a plate of fried fish cakes...",
+"location": "Dwells among clusters of aquatic plants in shallow waters.",
+"desc": "The Clown Featherback is a commonly sighted species in modern river systems. It inhabits riverbeds covered with dense vegetation, using the underwater foliage as camouflage from both predators and humans. In earlier times, their population was abundant, but overfishing—fueled by their remarkably delicate flavor—drove them close to extinction. Interestingly, recent observations suggest that a mutation within the river’s ecosystem has allowed their numbers to recover, leading to the resurgence now recorded.",
+"price": 120,
+"speed": 1,
+"moveFreq": 5,
+"chaseSpd": 5,
+"pullStr": 1,
+"bait": 1,
+"eyesight": 2
+}

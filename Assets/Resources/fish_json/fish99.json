@@ -1,0 +1,13 @@
+{
+"name": "super fish",
+"comment": "comment.",
+"location": "Commonly found in shallow waters.",
+"desc": "The Goliath Minnow is the largest known species within the minnow family. They often gather in large schools, favoring shallow and exceptionally clear waters. Historical records indicate that minnows were once only a tenth of their current size. However, due to a series of mutations observed in the river ecosystem, the species appears to have undergone a remarkable growth evolution, resulting in the colossal form seen today.",
+"price": 999,
+"speed": 10,
+"moveFreq": 1,
+"chaseSpd": 10,
+"pullStr": 10,
+"bait": 1,
+"eyesight": 20
+}

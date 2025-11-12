@@ -1,0 +1,13 @@
+{
+"name": "Marble Goby",
+"comment": "With a size like that, it could swallow a human hand whole.",
+"location": "Deep sections of the river.",
+"desc": "The Marble Goby typically inhabits the riverbed, preying on smaller fish that stray too close. Normally, it lies in wait—motionless—before striking with sudden precision. However, recent observations indicate a behavioral shift. Following the river’s ongoing mutations, the species has become increasingly active and aggressive, abandoning its ambush tactics for a more predatory pursuit. It no longer waits for prey to come near; now…it hunts.",
+"price": 450,
+"speed": 1,
+"moveFreq": 5,
+"chaseSpd": 7,
+"pullStr": 4,
+"bait": 1,
+"eyesight": 4
+}

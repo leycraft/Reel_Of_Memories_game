@@ -1,0 +1,13 @@
+{
+"name": "Climbing Perch",
+"comment": "Never thought I’d find fish living among piles of garbage.",
+"location": "Lives near mid-level riverbeds.",
+"desc": "The Climbing Perch is renowned for its extraordinary endurance and adaptability. Capable of surviving on land for weeks, it can even move across solid ground using its sharp pectoral spines—a trait that earned it the nickname “walking fish.” In recent years, large amounts of waste have accumulated along the riverbed. Strangely, this species has learned to utilize the refuse, turning heaps of discarded debris into makeshift shelters against predators. It seems that even in decay, life finds a way to persist… perhaps a little too well.",
+"price": 180,
+"speed": 1,
+"moveFreq": 5,
+"chaseSpd": 5,
+"pullStr": 2,
+"bait": 1,
+"eyesight": 2
+}
