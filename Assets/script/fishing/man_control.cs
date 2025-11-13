@@ -60,7 +60,7 @@ public class man_control : MonoBehaviour
         game_ui.change_UI(1);
     }
 
-    public void stop_fishing(fish_basic fish)
+    public void stop_fishing(fish_basic fish, metal_obj obj)
     {
         stop_fishing();
 
@@ -68,6 +68,12 @@ public class man_control : MonoBehaviour
         {
             receive_fish(fish);
             Destroy(fish.gameObject);
+        }
+
+        if(obj != null)
+        {
+            receive_box(obj);
+            Destroy(obj.gameObject);
         }
     }
 
@@ -108,5 +114,10 @@ public class man_control : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void receive_box(metal_obj box)
+    {
+        player_stats.box_collected++;
     }
 }

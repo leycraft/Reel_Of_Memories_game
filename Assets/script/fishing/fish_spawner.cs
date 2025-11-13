@@ -28,6 +28,11 @@ public class fish_spawner : MonoBehaviour
         StartCoroutine(spawn_fish_loop());
     }
 
+    void OnEnable()
+    {
+        StartCoroutine(spawn_fish_loop());
+    }
+
     // Update is called once per frame
     void Update()
     {

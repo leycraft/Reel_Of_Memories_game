@@ -110,6 +110,17 @@ public class item_list : MonoBehaviour
         {
             light_select.SetActive(false);
         }
+
+        for (int i = 0; i < bait_select.Count; i++)
+        {
+            if (i == hook.lureType)
+            {
+                bait_select[i].SetActive(true);
+            }
+            else{
+                bait_select[i].SetActive(false);
+            }
+        }
     }
 
     public void select_light()
@@ -120,5 +131,16 @@ public class item_list : MonoBehaviour
     public void select_magnet()
     {
         hook.magnet_on = !hook.magnet_on;
+    }
+
+    public void select_food(int i)
+    {
+        if (i == hook.lureType)
+        {
+            hook.lureType = 0;
+        }
+        else{
+            hook.lureType = i;
+        }
     }
 }

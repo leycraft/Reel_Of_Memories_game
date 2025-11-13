@@ -269,8 +269,6 @@ public class fish_basic : MonoBehaviour
 
             transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 0);
         }
-
-
     }
 
     IEnumerator chasing_bored()

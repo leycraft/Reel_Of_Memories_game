@@ -318,13 +318,17 @@ public class CutsceneManager : MonoBehaviour
 
     void EndCutscene()
     {
-        Debug.Log("Cutscene finished — ready to return to main game");
+        // Debug.Log("Cutscene finished — ready to return to main game");
         StartCoroutine(CrossfadeBGM(null, 2f));
         StartCoroutine(FadeScene(false, 1.0f));
         //fadePanel.raycastTarget = true;
         cutsceneParent.SetActive(false);
         // จากนั้นถ้าอยากให้เปลี่ยน scene หลัง fade เสร็จ
         //StartCoroutine(ExitToGame());
+
+        // I want die
+        CutsceneStater stater = GameObject.Find("CutsceneController").GetComponent<CutsceneStater>();
+        stater.off_cutscene();
     }
 
     // ถ้าอยากให้ตัด scene หลัง fade out

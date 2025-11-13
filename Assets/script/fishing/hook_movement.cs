@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -49,7 +50,7 @@ public class hook_movement : MonoBehaviour
 
 
     public fish_basic fish_caught;
-    public GameObject item_caught;
+    public metal_obj item_caught;
 
     man_control man;
     player_stats player_stats;
@@ -63,6 +64,9 @@ public class hook_movement : MonoBehaviour
 
     GameObject hook_sprite;
     GameObject magnet_sprite;
+    GameObject light_sprite;
+
+    public List<GameObject> food_sprite = new List<GameObject>();
 
     Vector3 original_location;
 
@@ -82,8 +86,9 @@ public class hook_movement : MonoBehaviour
         lure_sprite = transform.Find("Lure_Modular").gameObject;
 
         hook_sprite = transform.Find("Lure_Modular/Lure_body_0/Lure_hook").gameObject;
-
         magnet_sprite = transform.Find("Lure_Modular/Lure_body_0/Lure_magnet").gameObject;
+        light_sprite = transform.Find("Lure_Modular/light_bulb_0").gameObject;
+
 
         original_location = transform.position;
 
@@ -108,6 +113,11 @@ public class hook_movement : MonoBehaviour
             fish_positioning();
             fishing_gameplay();
         }
+
+        if (item_caught != null)
+        {
+            box_positioning();
+        }
     }
 
     public void hook_moving()
@@ -120,6 +130,11 @@ public class hook_movement : MonoBehaviour
             float verticalInput = Input.GetAxis("Vertical");   // W/S or Up/Down Arrow keys
 
             Vector3 movement = new Vector3(horizontalInput, verticalInput, 0f);
+
+            if(movement.magnitude > 1)
+            {
+                movement = movement.normalized;
+            }
 
             transform.Translate(movement * moveSpeed_final * Time.deltaTime);
 
@@ -205,7 +220,12 @@ public class hook_movement : MonoBehaviour
             fish_caught = null;
         }
 
-        transform.position = new Vector3(999, 999, 999);
+        if (item_caught != null) { 
+            item_caught.reset_pos();
+            item_caught = null;
+        }
+
+        transform.position = new Vector3(99, 99, 99);
 
         stress_level = 0;
     }
@@ -248,7 +268,7 @@ public class hook_movement : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.A))
             {
-                transform.Translate(new Vector3(-3,-3,0) * Time.deltaTime);
+                transform.Translate(new Vector3(-3, -3, 0) * Time.deltaTime);
             }
             else if (Input.GetKey(KeyCode.D))
             {
@@ -296,6 +316,19 @@ public class hook_movement : MonoBehaviour
         transform.localScale = new Vector3(1f, 1f, 1f);
     }
 
+    public void box_on_hook(metal_obj obj)
+    {
+        item_caught = obj;
+    }
+
+    public void box_positioning()
+    {
+        Vector3 position = hook_location.position;
+        position.y -= 0.8f;
+
+        item_caught.transform.position = position;
+    }
+
     public void lure_visibility()
     {
         if (fish_caught == null)
@@ -316,6 +349,32 @@ public class hook_movement : MonoBehaviour
         {
             magnet_sprite.SetActive(false);
             hook_sprite.SetActive(true);
+        }
+
+        if (flashlight_on)
+        {
+            light_sprite.SetActive(true);
+        }
+        else
+        {
+            light_sprite.SetActive(false);
+        }
+
+        // none
+        // seaweed
+        // luxury
+        // special
+
+        for (int i = 0; i < food_sprite.Count; i++)
+        {
+            if (i == lureType)
+            {
+                food_sprite[i].SetActive(true);
+            }
+            else
+            {
+                food_sprite[i].SetActive(false);
+            }
         }
     }
 
@@ -342,7 +401,10 @@ public class hook_movement : MonoBehaviour
     {
         if (other.name == "surface")
         {
-            man.stop_fishing(fish_caught);
+            man.stop_fishing(fish_caught, item_caught);
+        }else if (other.name == "hit_area_6eye")
+        {
+            player_stats.hit_area_6eye_check();
         }
     }
 

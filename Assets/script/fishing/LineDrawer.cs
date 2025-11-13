@@ -67,6 +67,12 @@ public class LineDrawer : MonoBehaviour
         return dist;
     }
 
+    public float get_depth_from_surface_no_abs()
+    {
+        float dist = startPoint.transform.position.y - endPoint.transform.position.y;
+        return (dist * 0.5f) - 2.3f;
+    }
+
     public Vector3 get_direction()
     {
         Vector3 direction = startPoint.transform.position - endPoint.transform.position;
