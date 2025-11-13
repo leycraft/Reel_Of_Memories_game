@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sliderbar_button_0: 4596192013046802116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      compass_needle_0: -6998479896470467782
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

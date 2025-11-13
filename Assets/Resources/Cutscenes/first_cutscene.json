@@ -1,0 +1,158 @@
+{
+  "cutsceneId": "FirstCutscene",
+
+  "lines": [
+    {
+      "speakerName": "",
+      "dialogueText": "<b>William</b> is a scientist who studied fish. He loved searching for <i>strange</i> and rare species from every corner of the world.",
+      "background": "black",
+      "character": null,
+      "bgm": "intro_theme",
+      "isNarration": true
+    },
+    {
+      "speakerName": "",
+      "dialogueText": "He once had an accident, but the memory of what happened is gone. Only a strange feeling remains deep inside him — something that won’t fade away.",
+      "background": "black",
+      "character": null,
+      "bgm": "intro_theme",
+      "isNarration": true
+    },
+    {
+      "speakerName": "",
+      "dialogueText": "The doctor said those lost memories might return if he ever comes across something that could awaken them.",
+      "background": "black",
+      "character": null,
+      "bgm": "intro_theme",
+      "isNarration": true
+    },
+    {
+      "speakerName": "",
+      "dialogueText": "Months passed, yet the memories never returned. So he decided to take a break — hoping it might ease the heavy feeling that still lingered in his heart.",
+      "background": "black",
+      "character": null,
+      "bgm": "intro_theme",
+      "isNarration": true
+    },
+    {
+      "speakerName": "",
+      "dialogueText": "But even then, he had no idea where to go. Until one day, a friend of his — <b>a fisherman</b> — reached out to him.",
+      "background": "black",
+      "character": null,
+      "bgm": "intro_theme",
+      "isNarration": true
+    },
+    {
+      "speakerName": "Friend",
+      "dialogueText": "Hey, William. How have you been? Did your memories ever come back?",
+      "background": "smartphone",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": false
+    },
+    {
+      "speakerName": "William",
+      "dialogueText": "Feels the same as always. My memories still haven’t come back either.",
+      "background": "smartphone",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": false
+    },
+    {
+      "speakerName": "William",
+      "dialogueText": "I was thinking maybe I should get out for a while… touch some grass, you know? But I have no idea where to go yet.",
+      "background": "smartphone",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": false
+    },
+    {
+      "speakerName": "Friend",
+      "dialogueText": "Then this might be perfect for you. How about going after some strange, rare fish — the kind you’ve always liked?",
+      "background": "smartphone",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": false
+    },
+    {
+      "speakerName": "William",
+      "dialogueText": "Sounds interesting. So, what kind of fish are we talking about?",
+      "background": "smartphone",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": false
+    },
+    {
+      "speakerName": "Friend",
+      "dialogueText": "I’m not really sure what it looks like — it’s just a rumor I heard from someone else. But they say the fish can be found somewhere near <b>the Falling Leaves Dam</b>.",
+      "background": "smartphone",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": false
+    },
+    {
+      "speakerName": "William",
+      "dialogueText": "The Falling Leaves Dam… near the <b>Evergreen River</b>, right? If I remember correctly, people around there believe in some kind of river god....",
+      "background": "smartphone",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": false
+    },
+    {
+      "speakerName": "William",
+      "dialogueText": "Sounds interesting. Are you coming with me?",
+      "background": "smartphone",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": false
+    },
+    {
+      "speakerName": "Friend",
+      "dialogueText": "You know I’m not into catching weird fish like you are.\nYou should go on your own this time.",
+      "background": "smartphone",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": false
+    },
+    {
+      "speakerName": "William",
+      "dialogueText": "Alright then, I’ll go by myself.\nStill, thanks for the info — I appreciate it.",
+      "background": "smartphone",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": false
+    },
+    {
+      "speakerName": "Friend",
+      "dialogueText": "No need to thank me for something like that. Anyway, good luck with your fishing — see you around.",
+      "background": "smartphone",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": false
+    },
+    {
+      "speakerName": "William",
+      "dialogueText": "Yeah, see you.",
+      "background": "smartphone",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": false
+    },
+    {
+      "speakerName": "",
+      "dialogueText": "After getting the information, William began preparing his <b>special fishing gear</b> — a custom rod with a lure that could move <i>freely</i> underwater, almost like a real fish. It was a new kind of equipment that had become quite popular among modern anglers.",
+      "background": "black",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": true
+    },
+    {
+      "speakerName": "",
+      "dialogueText": "To be sure everything worked, he decided to test the rod at a small pond near his home.",
+      "background": "black",
+      "character": null,
+      "bgm": "intro2",
+      "isNarration": true
+    }
+  ]
+}

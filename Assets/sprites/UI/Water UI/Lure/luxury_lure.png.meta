@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      luxury_lure_0: -2999012625580310482
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,85 @@
+{
+    "cutsceneId": "FifthCutscene",
+    "lines": [
+        {
+        "speakerName": "",
+        "dialogueText": "You return to the shop to hand over the metal box you found. again...",
+        "background": "black",
+        "character": null,
+        "bgm": "doorbell",
+        "isNarration": true
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "Alright, this should be the metal box you’ve been looking for.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Let me take a look… Yes, this is the one I’ve been looking for.\nAs promised, here’s the special bait from me.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "But a word of warning, my good customer—once you use this bait, every fish in the water will <b>swarm</b> toward it.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "So, be sure you’re well <b>prepared</b> before putting it to use.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "Alright, I’ll be careful.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "But before you go, if it’s not too much to ask, I’d love to see that strange fish with my own eyes.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "And of course… I’d be willing to buy it for a <i>very</i> generous price.\nWhat do you say, my good customer?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "Of course. I only want to record its data anyway — I’m not planning on keeping it.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "<b><i>Splendid</i></b>, my good customer!\nThen it’s a deal.\nMay fortune smile upon your catch my good customer.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        }
+    ]
+}

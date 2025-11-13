@@ -1,0 +1,173 @@
+{
+    "cutsceneId": "SecondCutscene",
+    "lines": [
+        {
+        "speakerName": "",
+        "dialogueText": "After testing his rod, William set out for the Falling Leaves Dam —determined to find the strange fish his friend had told him about.",
+        "background": "black",
+        "character": null,
+        "bgm": "entering_town_theme",
+        "isNarration": true
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "When he arrived at the dam, William asked the locals about the rumored strange fish. <i>Oddly</i> enough, most of them claimed to know nothing about it...",
+        "background": "black",
+        "character": null,
+        "bgm": "entering_town_theme",
+        "isNarration": true
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "or perhaps, they were simply <b>avoiding</b> the question.",
+        "background": "black",
+        "character": null,
+        "bgm": "entering_town_theme",
+        "isNarration": true
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "Time passed, but William still found no answers. He began to think the rumor might have been false and was about to give up on finding the strange fish.",
+        "background": "black",
+        "character": null,
+        "bgm": "entering_town_theme",
+        "isNarration": true
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "But just before heading back, he noticed a small fish shop standing alone by the roadside. He decided to step inside — one last time — to ask about it.",
+        "background": "black",
+        "character": null,
+        "bgm": "entering_town_theme",
+        "isNarration": true
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "[Door bell sound]",
+        "background": "shop",
+        "character": null,
+        "bgm": "doorbell",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Oh… a new customer.\nWelcome.\nIs there something I can help you with?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "I just wanted to ask you something.\nDo you happen to know anything about the strange rumor going around this area?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "A strange fish, you say…\nOh, you must be talking about the one they call <b>Six-Eyed Fish</b>, aren’t you?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "<b>Six-Eyed Fish</b>?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Yes… that fish lives deep down in the darkest part of the Evergreen River, near the Falling Leaves Dam.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "But judging from your gear… it doesn’t seem nearly enough to catch the Six-Eyed Fish.\nHow about letting me help you, dear customer?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "(<i>He’s probably just trying to sell me something… better get out of here while I can.</i>)",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Oh, I’m not just trying to sell you something, dear customer.\nI’m merely offering… a trade.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "…A trade?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "If you happen to catch any fish from the river, you can bring them to me.\nI’ll pay you a good price for them.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "And of course, if you ever need <b>new gears</b> — or want your equipment <b>upgraded</b> — I can handle that too.\nSo… what do you say, dear customer?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "Alright then, that sounds fair enough.\nLet’s call it a trade for the information you gave me.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "<b><i>Splendid</i></b>, dear customer!\nIn that case, I wish you the best of luck in catching the Six-Eyed Fish.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "(<i>He’s definitely suspicious… but he’s the only lead I’ve got right now. Alright, time to find that strange fish.</i>)",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "Thanks for the info, shopkeeper.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        }
+    ]
+}

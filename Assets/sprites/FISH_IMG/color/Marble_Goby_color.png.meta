@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Marble_Goby_color_0: -4066235518694434833
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

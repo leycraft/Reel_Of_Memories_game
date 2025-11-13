@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Giant_salmon_carp_color_0: 2558775750601531772
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,45 @@
+{
+    "cutsceneId": "ForthCutscene",
+    "lines": [
+        {
+        "speakerName": "",
+        "dialogueText": "You return to the shop to hand over the metal box you found.",
+        "background": "black",
+        "character": null,
+        "bgm": "doorbell",
+        "isNarration": true
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Ah, you’re back, my good customer.\nSo… did you manage to find that iron box?",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "William",
+        "dialogueText": "Yeah, I think this is the box you were talking about.",
+        "background": "shop",
+        "character": "metal_box",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Let me take a look at that… \nhmm, I’m afraid this isn’t quite the box I was looking for.\nThe one I need is a bit larger than this.",
+        "background": "shop",
+        "character": "metal_box",
+        "bgm": "shop_radio",
+        "isNarration": false
+        },
+        {
+        "speakerName": "Shopkeeper",
+        "dialogueText": "Tell you what—I'll hold on to this one for now.\nIf you happen to find another metal box, bring it to me and I’ll take a look again.",
+        "background": "shop",
+        "character": "shopkeeper",
+        "bgm": "shop_radio",
+        "isNarration": false
+        }
+    ]
+}

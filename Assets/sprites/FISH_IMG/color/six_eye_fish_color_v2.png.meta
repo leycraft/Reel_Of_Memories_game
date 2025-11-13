@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      six_eye_fish_color_v2_0: -4778149298355817318
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

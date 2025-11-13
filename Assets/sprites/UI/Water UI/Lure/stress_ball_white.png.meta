@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stress_ball_white_0: 4928980212707810796
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
