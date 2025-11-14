@@ -5,7 +5,6 @@ using System.Diagnostics;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Experimental.GraphView.Port;
 
 public class caught_ui : MonoBehaviour
 {
@@ -27,9 +26,18 @@ public class caught_ui : MonoBehaviour
 
     }
 
-    public void open_UI(string json_name)
+    public void open_UI(string json_name, bool is_new)
     {
         obj_group.SetActive(true);
+
+        if (is_new)
+        {
+            UI_objects[2].gameObject.SetActive(true);
+        }
+        else
+        {
+            UI_objects[2].gameObject.SetActive(false);
+        }
 
         TextAsset loaded_json = Resources.Load<TextAsset>("fish_JSON/" + json_name);
 
@@ -43,6 +51,22 @@ public class caught_ui : MonoBehaviour
             Sprite newSprite = Resources.Load<Sprite>("fish_image/" + json_name);
             UI_objects[3].sprite = newSprite;
         }
+
+
+        StartCoroutine(open_UI_part2());
+    }
+
+    public void open_UI_magnet(string obj_name)
+    {
+        obj_group.SetActive(true);
+        UI_objects[2].gameObject.SetActive(true);
+
+        txt_objects[0].SetText($"You found {obj_name}");
+        txt_objects[1].SetText("");
+
+        Sprite newSprite = Resources.Load<Sprite>("box_image/" + obj_name);
+        UI_objects[3].sprite = newSprite;
+
 
 
         StartCoroutine(open_UI_part2());

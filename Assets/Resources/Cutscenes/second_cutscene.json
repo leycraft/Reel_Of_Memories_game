@@ -36,7 +36,7 @@
         {
         "speakerName": "",
         "dialogueText": "But just before heading back, he noticed a small fish shop standing alone by the roadside. He decided to step inside — one last time — to ask about it.",
-        "background": "black",
+        "background": "shop_front",
         "character": null,
         "bgm": "entering_town_theme",
         "isNarration": true

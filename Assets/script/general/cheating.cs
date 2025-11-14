@@ -27,6 +27,8 @@ public class cheating : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
+            // god hook
+
             hook.bought_light = true;
             hook.bought_magnet = true;
             hook.bought_seaweed = true;
@@ -34,15 +36,22 @@ public class cheating : MonoBehaviour
             hook.unlock_special = true;
 
             hook.moveSpeed_level = 4;
-            hook.reelStrength_level = 4;
+            hook.reelStrength_level = 9;
             hook.reelLength_level = 4;
         }
 
         if (Input.GetKeyDown(KeyCode.Keypad2))
         {
+            // catch all fish
             for (int i = 0; i < stats.fish_list.Length; i++) {
                 stats.fish_list[i] = 10;
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad3))
+        {
+            // infinite money
+            stats.money = 999999;
         }
     }
 }

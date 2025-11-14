@@ -70,9 +70,9 @@ public class man_control : MonoBehaviour
             Destroy(fish.gameObject);
         }
 
-        if(obj != null)
+        if (obj != null)
         {
-            receive_box(obj);
+            receive_box(obj, obj.name);
             Destroy(obj.gameObject);
         }
     }
@@ -106,18 +106,25 @@ public class man_control : MonoBehaviour
                 player_stats.fish_list[i]++;
                 player_stats.add_money(fish.price);
 
+
+                bool new_catch = false;
                 if (player_stats.fish_list[i] == 1)
                 {
-                    caught_ui.open_UI(fish.json_name);
-                    is_idle = false;
-                    new_fish = true;
+                    new_catch = true;
                 }
+
+                caught_ui.open_UI(fish.json_name, new_catch);
+                is_idle = false;
+                new_fish = true;
             }
         }
     }
 
-    public void receive_box(metal_obj box)
+    public void receive_box(metal_obj box, string box_name)
     {
         player_stats.box_collected++;
+        caught_ui.open_UI_magnet(box_name);
+        is_idle = false;
+        new_fish = true;
     }
 }

@@ -105,8 +105,14 @@ public class fish_basic : MonoBehaviour
             // change fish side
             change_fish_direction(destination);
 
+            float eyesight_length_final = eyesight_length;
 
-            if (dist < eyesight_length && hook.fish_caught == null)
+            if(hook.lureType == 3)
+            {
+                eyesight_length_final *= 2.7f;
+            }
+
+            if (dist < eyesight_length_final && hook.fish_caught == null)
             {
                 // check condition to eat
                 bool can_eat = true;
@@ -116,8 +122,23 @@ public class fish_basic : MonoBehaviour
                 {
                     can_eat = false;
                 }
+                else
+                {
+                    if (hook.lureType == 3 || preferred_lure == 0)
+                    {
+                        can_eat = true;
+                    }
+                    else if (hook.lureType == preferred_lure)
+                    {
+                        can_eat = true;
+                    }
+                    else
+                    {
+                        can_eat = false;
+                    }
+                }
 
-                
+
                 if (can_eat)
                 {
 

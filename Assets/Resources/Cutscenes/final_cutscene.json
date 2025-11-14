@@ -216,6 +216,14 @@
         "character": null,
         "bgm": "end_scene",
         "isNarration": true
+        },
+        {
+        "speakerName": "",
+        "dialogueText": "This is the end of our DEMO\n\n<b>Reel of Memory</b>\n\nThank for playing.",
+        "background": "black",
+        "character": null,
+        "bgm": "end_scene",
+        "isNarration": true
         }
     ]
 }

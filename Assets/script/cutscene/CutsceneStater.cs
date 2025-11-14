@@ -1,10 +1,11 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Experimental.GraphView.Port;
 
 public class CutsceneStater : MonoBehaviour
 {
+    player_stats stats;
+
     public CutsceneLoader CutsceneLoader;
 
     public Image black_cutscene;
@@ -16,7 +17,7 @@ public class CutsceneStater : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        stats = GameObject.Find("man_obj").GetComponent<player_stats>();
     }
 
     // Update is called once per frame
@@ -49,6 +50,7 @@ public class CutsceneStater : MonoBehaviour
 
     public void off_cutscene()
     {
+        stats.end_demo_check();
         StartCoroutine(off_cutscene_part2());
     }
 
