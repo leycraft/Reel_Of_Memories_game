@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 118767492}
   - component: {fileID: 118767493}
   m_Layer: 0
-  m_Name: SFX_player
+  m_Name: BGM_player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds: []
---- !u!1 &409686256
+--- !u!1 &362803926
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,49 +173,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 409686257}
-  - component: {fileID: 409686258}
+  - component: {fileID: 362803928}
+  - component: {fileID: 362803927}
   m_Layer: 0
-  m_Name: slow_reel
+  m_Name: bgm_controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &409686257
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409686256}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2027194188}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &409686258
+--- !u!114 &362803927
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409686256}
+  m_GameObject: {fileID: 362803926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 165d8d202b258d648828b36d7cfa0664, type: 3}
+  m_Script: {fileID: 11500000, guid: 1638c4d3d203ad34591c49041aa91f7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: slow_reel
-  clip: {fileID: 8300000, guid: a54528368a3dc9f4292b57905c093d59, type: 3}
-  mixer: {fileID: 24300002, guid: a7fddaf310e90b94c84ea8b4dd776eab, type: 2}
-  volume: 0.5
-  pitch: 1
-  loop: 1
-  source: {fileID: 0}
+--- !u!4 &362803928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362803926}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1025.0863, y: 493.40286, z: 1.4202785}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &492126516
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,7 +573,7 @@ GameObject:
   - component: {fileID: 849482890}
   - component: {fileID: 849482891}
   m_Layer: 0
-  m_Name: rod_cast
+  m_Name: menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -613,12 +606,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 165d8d202b258d648828b36d7cfa0664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: rod_cast
-  clip: {fileID: 8300000, guid: d53984915537e1f48a98aaf233209f3b, type: 3}
-  mixer: {fileID: 24300002, guid: a7fddaf310e90b94c84ea8b4dd776eab, type: 2}
+  name: menu
+  clip: {fileID: 8300000, guid: cd7cb1efdfac6c943a99b238ae9cb9b7, type: 3}
+  mixer: {fileID: 24300002, guid: a3428d944c2b32d4abb6bc703d0debaf, type: 2}
   volume: 1
   pitch: 1
-  loop: 0
+  loop: 1
   source: {fileID: 0}
 --- !u!1 &1011293094
 GameObject:
@@ -770,7 +763,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 118767492}
-  - {fileID: 2027194188}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1199392523
@@ -962,57 +954,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1647813063
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1647813064}
-  - component: {fileID: 1647813065}
-  m_Layer: 0
-  m_Name: fast_reel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1647813064
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647813063}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2027194188}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1647813065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647813063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 165d8d202b258d648828b36d7cfa0664, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: fast_reel
-  clip: {fileID: 8300000, guid: 4c0a4df1c73e83d4283577d82a4eb89b, type: 3}
-  mixer: {fileID: 24300002, guid: a7fddaf310e90b94c84ea8b4dd776eab, type: 2}
-  volume: 0.5
-  pitch: 1
-  loop: 1
-  source: {fileID: 0}
 --- !u!1 &1830921635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,105 +1108,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2027194187
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2027194188}
-  - component: {fileID: 2027194189}
-  m_Layer: 0
-  m_Name: REEL_player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2027194188
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2027194187}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 409686257}
-  - {fileID: 1647813064}
-  - {fileID: 2069458603}
-  m_Father: {fileID: 1123611738}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2027194189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2027194187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbf1f5ff5365a74a839881a1a2a87bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds: []
---- !u!1 &2069458602
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2069458603}
-  - component: {fileID: 2069458604}
-  m_Layer: 0
-  m_Name: string_snap
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2069458603
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069458602}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2027194188}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2069458604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069458602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 165d8d202b258d648828b36d7cfa0664, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: string_snap
-  clip: {fileID: 8300000, guid: 3fbebb59483f26743bafa8c1ad8dd02f, type: 3}
-  mixer: {fileID: 24300002, guid: a7fddaf310e90b94c84ea8b4dd776eab, type: 2}
-  volume: 0.5
-  pitch: 1
-  loop: 0
-  source: {fileID: 0}
 --- !u!1 &2092848678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,3 +1223,4 @@ SceneRoots:
   - {fileID: 1123611738}
   - {fileID: 1417610029}
   - {fileID: 2092848682}
+  - {fileID: 362803928}
