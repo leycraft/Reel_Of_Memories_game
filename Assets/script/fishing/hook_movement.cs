@@ -168,7 +168,7 @@ public class hook_movement : MonoBehaviour
                 audio_level = 1f;
             }
 
-            audio_manager.sound_volume("slow_reel", audio_level * 0.05f);
+            audio_manager.sound_volume("slow_reel", audio_level * 0.01f);
 
             // animation control
             if (Mathf.Abs(horizontalInput) > 0f || Mathf.Abs(verticalInput) > 0f)
@@ -276,11 +276,11 @@ public class hook_movement : MonoBehaviour
             }
             else
             {
-                transform.Translate(pull_back * (pull_back_power - (pull_back_power * (fish_extra_strength - 1))) * Time.deltaTime);
+                transform.Translate(pull_back * pull_back_power * Time.deltaTime);
             }
             stress_level += stress_increment * Time.deltaTime;
 
-            audio_manager.sound_volume("fast_reel", 0.05f);
+            audio_manager.sound_volume("fast_reel", 0.01f);
         }
         else
         {

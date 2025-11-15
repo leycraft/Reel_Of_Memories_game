@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\work file\\project\\github file\\Reel_Of_Memories_game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99CF7AF3-3E2F-E2D1-A366-BE66B715FDBC}|Assembly-CSharp.csproj|c:\\work file\\project\\github file\\reel_of_memories_game\\assets\\script\\cutscene\\cutsceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99CF7AF3-3E2F-E2D1-A366-BE66B715FDBC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\cutscene\\cutsceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99CF7AF3-3E2F-E2D1-A366-BE66B715FDBC}|Assembly-CSharp.csproj|c:\\work file\\project\\github file\\reel_of_memories_game\\assets\\script\\audio\\bgm\\bgm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99CF7AF3-3E2F-E2D1-A366-BE66B715FDBC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\audio\\bgm\\bgm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99CF7AF3-3E2F-E2D1-A366-BE66B715FDBC}|Assembly-CSharp.csproj|c:\\work file\\project\\github file\\reel_of_memories_game\\assets\\script\\cutscene\\cutscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99CF7AF3-3E2F-E2D1-A366-BE66B715FDBC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\cutscene\\cutscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99CF7AF3-3E2F-E2D1-A366-BE66B715FDBC}|Assembly-CSharp.csproj|C:\\work file\\project\\github file\\Reel_Of_Memories_game\\assets\\script\\cutscene\\cutscenestater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99CF7AF3-3E2F-E2D1-A366-BE66B715FDBC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\cutscene\\cutscenestater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99CF7AF3-3E2F-E2D1-A366-BE66B715FDBC}|Assembly-CSharp.csproj|C:\\work file\\project\\github file\\Reel_Of_Memories_game\\assets\\script\\cutscene\\cutsceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99CF7AF3-3E2F-E2D1-A366-BE66B715FDBC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\cutscene\\cutsceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,6 +31,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "bgm_menu.cs",
+              "DocumentMoniker": "C:\\work file\\project\\github file\\Reel_Of_Memories_game\\Assets\\script\\audio\\bgm\\bgm_menu.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\audio\\bgm\\bgm_menu.cs",
+              "ToolTip": "C:\\work file\\project\\github file\\Reel_Of_Memories_game\\Assets\\script\\audio\\bgm\\bgm_menu.cs",
+              "RelativeToolTip": "Assets\\script\\audio\\bgm\\bgm_menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T01:53:30.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CutsceneStater.cs",
+              "DocumentMoniker": "C:\\work file\\project\\github file\\Reel_Of_Memories_game\\Assets\\script\\cutscene\\CutsceneStater.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\cutscene\\CutsceneStater.cs",
+              "ToolTip": "C:\\work file\\project\\github file\\Reel_Of_Memories_game\\Assets\\script\\cutscene\\CutsceneStater.cs",
+              "RelativeToolTip": "Assets\\script\\cutscene\\CutsceneStater.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T16:14:54.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CutsceneLoader.cs",
               "DocumentMoniker": "C:\\work file\\project\\github file\\Reel_Of_Memories_game\\Assets\\script\\cutscene\\CutsceneLoader.cs",
               "RelativeDocumentMoniker": "Assets\\script\\cutscene\\CutsceneLoader.cs",
@@ -30,8 +63,7 @@
               "RelativeToolTip": "Assets\\script\\cutscene\\CutsceneLoader.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T16:09:16.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T16:09:16.583Z"
             },
             {
               "$type": "Document",
@@ -41,7 +73,7 @@
               "RelativeDocumentMoniker": "Assets\\script\\cutscene\\CutsceneManager.cs",
               "ToolTip": "C:\\work file\\project\\github file\\Reel_Of_Memories_game\\Assets\\script\\cutscene\\CutsceneManager.cs",
               "RelativeToolTip": "Assets\\script\\cutscene\\CutsceneManager.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwEMBAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwEQBAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-12T15:47:04.674Z",
               "EditorCaption": ""
